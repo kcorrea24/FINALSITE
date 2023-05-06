@@ -1,0 +1,303 @@
+@font-face {
+    font-family: clashdisplay;
+    src: url(../fonts/ClashDisplay-Variable.ttf);
+  }
+  .title {
+    display: inline;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 25px;
+    font-weight: lighter;
+    color:lightgray
+  }
+  /* loading Screen */
+  .img-spinner  {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:9999;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.99s ease;
+  }
+  .img-size {
+    width:25%;
+  }
+  @keyframes spinning {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg)}
+    
+  }
+  .img-cof {
+    width:35%;
+  }
+  .spin {
+    animation-name:spinning;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @media screen and (min-width: 1000px) {
+  
+  .img-size {
+      width:10%;
+    }
+  
+  .img-cof {
+    width:15%;
+  }
+  }
+  
+  @media screen and (min-width: 786px) {
+   
+  .img-size {
+        width:25%;
+      }
+  
+   .img-cof {
+        width:35%;
+      }
+    }
+  /* VARIABLES */
+  :root {
+      --c-dark: #212529;
+      --c-brand: #4e57d4;
+      --c-brand-light: #6970dd;
+      --c-brand-rgb: 78, 87, 212;
+      --c-body: #727272;
+      --font-base: "ClashDisplay", sans-serif;
+      --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+      --transition: all 0.5s ease;
+  }
+  #name {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ca702b, 0 0 20px #ca702b, 0 0 25px #ca702b, 0 0 30px #ca702b, 0 0 35px #ca702b;
+    animation: flicker .5s infinite alternate;
+    color: #fff;
+    
+  }
+  /* Flickering animation */
+  @keyframes flicker {
+      
+  
+    
+    20%, 24%, 50%{        
+        text-shadow: none;
+    }    
+  }
+
+  /* RESET & HELPERS */
+body {
+
+    line-height: 1.7;
+    color: var(--c-body);
+    background-color: #3d3d3d;
+    font-family:'clashdisplay';
+}
+
+ h1, h2, h3,h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 600;
+    color: var(--c-dark);
+    color: rgb(255, 255, 255);
+  
+}
+
+.navbar-brand  {
+  
+    width: 60px;
+    height:auto;
+  
+}
+a {
+    text-decoration: none;
+    color: var(--c-brand);
+    transition: var(--transition);
+    
+}
+
+a:hover {
+    color: var(--c-brand-light);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
+/* IMAGE ZOOM */
+.image-zoom {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img{
+     transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+
+/* NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brand);
+}
+
+
+/* BTN */
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: var(--c-brand);
+    border-color: var(--c-brand);
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: var(--c-brand-light);
+    border-color: var(--c-brand-light);
+    color: white;
+}
+
+
+#hero h1, h5{
+  color: #ca702b;
+}
+
+/* neon light */
+
+#apple,
+#instagram,
+#github,
+#facebook {
+  font-size: 1em;
+  background-color: #18191f;
+  color: #fff;
+  border-radius: 29px;
+  padding: 11px;
+ 
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 0px #0072ff, 0 0 00px #0072ff, 0 0 10px #0072ff,
+    0 0 00px #0072ff;
+}
+#instagram {
+  animation-delay: 0.3s;
+}
+#facebook {
+  animation-delay: 0.7s;
+}
+#github {
+  animation-delay: 0.1s;
+}
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* FOOTER */
+/* FOOTER */
+footer {
+    padding-top: 120px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+ 
+}
+
+
+footer li,
+footer p,
+footer a {
+    color: rgba(255,255,255,0.7);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--c-brand);
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
+
+@media screen and (min-width: 786px) {
+    .title::after {
+      color:black;
+      content: "Northern Cup";
+
+    }
+}
+@media screen and (min-width: 1000px) {
+  .title::after {
+    width:25%;
+    color:black;
+    content: "Northern Cup";
+
+  }
+}

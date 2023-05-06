@@ -9,7 +9,9 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-});
+}
+);
+
 const spinnerWrapperEl = document.querySelector('.img-spinner')
 
 window.addEventListener('load', () => {
@@ -19,3 +21,9 @@ window.addEventListener('load', () => {
       spinnerWrapperEl.style.display = 'none';
    }, 600);
 });
+
+
+
+var scroll = new SmoothScroll('a[href*="#"]');
+
+
