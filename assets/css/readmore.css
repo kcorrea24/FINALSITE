@@ -11,57 +11,58 @@
     color:lightgray
   }
   /* loading Screen */
-  .img-spinner  {
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index:9999;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    transition:all 0.99s ease;
-  }
-  .img-size {
-    width:25%;
-  }
-  @keyframes spinning {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg)}
-    
-  }
-  .img-cof {
-    width:35%;
-  }
-  .spin {
-    animation-name:spinning;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
+.img-spinner  {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:9999;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition:all 0.99s ease;
+}
+.img-size {
+  width:20%;
+}
+@keyframes spinning {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg)}
   
-  @media screen and (min-width: 1000px) {
-  
-  .img-size {
+}
+.img-cof {
+  width:28%;
+}
+.spin {
+  animation-name:spinning;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@media screen and (min-width: 1000px) {
+
+.img-size {
+    width:10%;
+  }
+
+.img-cof {
+  width:15%;
+}
+}
+
+@media screen and (min-width: 786px) {
+ 
+.img-size {
       width:10%;
     }
-  
-  .img-cof {
-    width:15%;
-  }
-  }
-  
-  @media screen and (min-width: 786px) {
-   
-  .img-size {
-        width:25%;
-      }
-  
-   .img-cof {
-        width:35%;
-      }
+
+ .img-cof {
+      width:15%;
     }
+  }
+  
   /* VARIABLES */
   :root {
       --c-dark: #212529;
@@ -159,7 +160,7 @@ img {
     transform: scale(1.1);
 }
 
-/* NAVBAR */
+* NAVBAR */
 .navbar {
     box-shadow: var(--box-shadow);
 }
@@ -184,13 +185,13 @@ img {
 }
 
 .btn-brand {
-    background-color: var(--c-brand);
+    background-color: #7f2b0a;
     border-color: var(--c-brand);
     color: white;
 }
 
 .btn-brand:hover {
-    background-color: var(--c-brand-light);
+    background-color: #7f2b0a;
     border-color: var(--c-brand-light);
     color: white;
 }

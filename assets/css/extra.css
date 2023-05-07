@@ -1,0 +1,270 @@
+
+@import url('https://fonts.cdnfonts.com/css/timeless?styles=11209');
+
+.title {
+  display: inline;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 25px;
+  font-weight: lighter;
+  color:lightgray
+  
+}
+/* loading Screen */
+.img-spinner  {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:9999;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transition:all 0.99s ease;
+}
+.img-size {
+  width:20%;
+}
+@keyframes spinning {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg)}
+  
+}
+.img-cof {
+  width:28%;
+}
+.spin {
+  animation-name:spinning;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@media screen and (min-width: 1000px) {
+
+.img-size {
+    width:10%;
+  }
+
+.img-cof {
+  width:15%;
+}
+}
+
+@media screen and (min-width: 786px) {
+ 
+.img-size {
+      width:10%;
+    }
+
+ .img-cof {
+      width:15%;
+    }
+  }
+  
+  /* RESET & HELPERS */
+  body {
+  
+      line-height: 1.7;
+      color: var(--c-body);
+      background-color: #3d3d3d;
+      font-family: 'Timeless', sans-serif;
+      
+  }
+  
+   h1, h2, h3,h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+      font-weight: 600;
+      color: var(--c-dark);
+      color: rgb(255, 255, 255);
+    
+  }
+  
+  .navbar-brand  {
+    
+      width: 60px;
+      height:auto;
+    
+  }
+  a {
+      text-decoration: none;
+      color: var(--c-brand);
+      transition: var(--transition);
+      
+  }
+  
+  a:hover {
+      color: var(--c-brand-light);
+  }
+  
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+  
+  .section-padding {
+      padding-top: 140px;
+      padding-bottom: 140px;
+  }
+  
+  .theme-shadow {
+      box-shadow: var(--box-shadow);
+  }
+  
+  /* IMAGE ZOOM */
+  .image-zoom {
+      position: relative;
+      /* overflow: hidden; */
+  }
+  
+  .image-zoom-wrapper {
+      overflow: hidden;
+      position: relative;
+  }
+  
+  .image-zoom-wrapper img{
+       transition: var(--transition);
+  }
+  
+  .image-zoom:hover .image-zoom-wrapper img {
+      transform: scale(1.1);
+  }
+  
+  
+  * NAVBAR */
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--c-brand);
+}
+
+
+/* BTN */
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+}
+
+.btn-brand {
+    background-color: #7f2b0a;
+    border-color: var(--c-brand);
+    color: white;
+}
+
+.btn-brand:hover {
+    background-color: #7f2b0a;
+    border-color: var(--c-brand-light);
+    color: white;
+}
+  
+  
+  #hero h1, h5{
+    color: #ca702b;
+  }
+
+  /* FOOTER */
+/* FOOTER */
+footer {
+    padding-top: 120px;
+}
+
+.footer-top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    padding-bottom: 40px;
+ 
+}
+
+
+footer li,
+footer p,
+footer a {
+    color: rgba(255,255,255,0.7);
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .line {
+    width: 40px;
+    height: 4px;
+    background-color: #ad4c01;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: var(--c-brand);
+    color: white;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  .title::after {
+    color:black;
+    content: "NC";
+    font-family: 'Timeless', sans-serif;
+    font-size: 4vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .title::after {
+    color:black;
+    content: "NC";
+    font-family: 'Timeless', sans-serif;
+    font-size: 4vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+}
+
+@media screen and (min-width: 786px) {
+    .title::after {
+      color:black;
+      content: "NC";
+      font-family: 'Timeless', sans-serif;
+      font-size: 3.5vh;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+}
+@media screen and (min-width: 1000px) {
+  .title::after {
+    width:25%;
+    color:black;
+    content: "Northern Cup Cafe";
+
+  }
+}

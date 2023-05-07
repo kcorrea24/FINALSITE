@@ -24,7 +24,7 @@
   transition:all 0.99s ease;
 }
 .img-size {
-  width:25%;
+  width:20%;
 }
 @keyframes spinning {
   from {transform: rotate(0deg);}
@@ -32,11 +32,11 @@
   
 }
 .img-cof {
-  width:35%;
+  width:28%;
 }
 .spin {
   animation-name:spinning;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -55,11 +55,11 @@
 @media screen and (min-width: 786px) {
  
 .img-size {
-      width:25%;
+      width:10%;
     }
 
  .img-cof {
-      width:35%;
+      width:15%;
     }
   }
 /* VARIABLES */

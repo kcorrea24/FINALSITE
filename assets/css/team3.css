@@ -24,7 +24,7 @@
   transition:all 0.99s ease;
 }
 .img-size {
-  width:25%;
+  width:20%;
 }
 @keyframes spinning {
   from {transform: rotate(0deg);}
@@ -32,11 +32,11 @@
   
 }
 .img-cof {
-  width:35%;
+  width:28%;
 }
 .spin {
   animation-name:spinning;
-  animation-duration: 1s;
+  animation-duration: 0.7s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -55,13 +55,14 @@
 @media screen and (min-width: 786px) {
  
 .img-size {
-      width:25%;
+      width:10%;
     }
 
  .img-cof {
-      width:35%;
+      width:15%;
     }
   }
+  
 /* VARIABLES */
 :root {
     --c-dark: #212529;
@@ -159,42 +160,41 @@ img {
   transform: scale(1.1);
 }
 
-/* NAVBAR */
+* NAVBAR */
 .navbar {
-  box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
 }
 
 .navbar-nav .nav-link {
-  font-weight: 500;
-  color: var(--c-dark);
+    font-weight: 500;
+    color: var(--c-dark);
 }
 
 .navbar-nav .nav-link.active {
-  color: var(--c-brand);
+    color: var(--c-brand);
 }
 
 
 /* BTN */
 .btn {
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-  border-radius: 0;
-  padding: 10px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
 }
 
 .btn-brand {
-  background-color: var(--c-brand);
-  border-color: var(--c-brand);
-  color: white;
+    background-color: #7f2b0a;
+    border-color: var(--c-brand);
+    color: white;
 }
 
 .btn-brand:hover {
-  background-color: var(--c-brand-light);
-  border-color: var(--c-brand-light);
-  color: white;
+    background-color: #7f2b0a;
+    border-color: var(--c-brand-light);
+    color: white;
 }
-
 
 #hero h1, h5{
 color: #ca702b;
