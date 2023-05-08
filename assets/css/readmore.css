@@ -21,7 +21,7 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  transition:all 0.99s ease;
+  transition:all 2.9s ease;
 }
 .img-size {
   width:20%;
@@ -36,7 +36,7 @@
 }
 .spin {
   animation-name:spinning;
-  animation-duration: 0.7s;
+  animation-duration: 0.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -44,22 +44,22 @@
 @media screen and (min-width: 1000px) {
 
 .img-size {
-    width:10%;
+    width:5%;
   }
 
 .img-cof {
-  width:15%;
+  width:10%;
 }
 }
 
 @media screen and (min-width: 786px) {
  
 .img-size {
-      width:10%;
+      width:5%;
     }
 
  .img-cof {
-      width:15%;
+      width:8.6%;
     }
   }
   
