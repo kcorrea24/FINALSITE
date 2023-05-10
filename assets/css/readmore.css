@@ -288,18 +288,44 @@ footer .line {
     color: white;
 }
 
+@media only screen and (min-width: 600px) {
+  .title::after {
+    color:black;
+    content: "NC";
+    font-family: 'Timeless', sans-serif;
+    font-size: 4vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .title::after {
+    color:black;
+    content: "NC";
+    font-family: 'Timeless', sans-serif;
+    font-size: 4vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+}
+
 @media screen and (min-width: 786px) {
     .title::after {
       color:black;
-      content: "Northern Cup";
-
+      content: "NC";
+      font-family: 'Timeless', sans-serif;
+      font-size: 3.5vh;
+      font-weight: 700;
+      letter-spacing: 1px;
     }
 }
 @media screen and (min-width: 1000px) {
   .title::after {
     width:25%;
     color:black;
-    content: "Northern Cup";
+    content: "Northern Cup Cafe";
 
   }
 }

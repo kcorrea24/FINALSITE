@@ -63,6 +63,8 @@
       width:9%;
     }
   }
+
+
   
 /* VARIABLES */
 :root {
@@ -1255,7 +1257,7 @@ margin-top: 10px;
 }
 
 .card{
-width: 300%;
+width: 100%;
 text-align: center;
 align-items: center;
 }
@@ -1272,9 +1274,10 @@ text-align: center;
 color: #7f2b0a;
 }
 
+
 @media only screen and (min-width: 600px) {
 .card::after {
-  width: 100%;
+  width: 50%;
  
 
 }
@@ -1282,16 +1285,15 @@ color: #7f2b0a;
 
 
 @media screen and (min-width: 786px) {
-.card::after {
+.card {
   width: 300%;
   }
 }
 @media screen and (min-width: 1000px) {
-.card::after {
-  width: 300%;
-
-}
-}
+  .card {
+    width: 300%;
+    }
+  }
 
 
 
@@ -1358,18 +1360,44 @@ footer .line {
   color: white;
 }
 
-@media screen and (min-width: 786px) {
+@media only screen and (min-width: 600px) {
   .title::after {
     color:black;
-    content: "Northern Cup";
+    content: "NC";
+    font-family: 'Timeless', sans-serif;
+    font-size: 4vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+}
 
-  }
+@media only screen and (max-width: 600px) {
+  .title::after {
+    color:black;
+    content: "NC";
+    font-family: 'Timeless', sans-serif;
+    font-size: 4vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+}
+
+@media screen and (min-width: 786px) {
+    .title::after {
+      color:black;
+      content: "NC";
+      font-family: 'Timeless', sans-serif;
+      font-size: 3.5vh;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
 }
 @media screen and (min-width: 1000px) {
-.title::after {
-  width:25%;
-  color:black;
-  content: "Northern Cup";
+  .title::after {
+    width:25%;
+    color:black;
+    content: "Northern Cup Cafe";
 
-}
+  }
 }
