@@ -63,7 +63,7 @@
       width:9%;
     }
   }
-  
+
   #nct{
     font-family: 'Timeless', sans-serif;
     font-size: 3vh;
@@ -180,80 +180,37 @@
     color: #ca702b;
   }
 
-  /* album */
-  img{
-    max-width: 100%;
-    height: 50%;
-  }
-  .gallery{
-    background-color: #3d3d3d;
-    padding: 80px 0;
-  }
-  .gallery img{
-    background-color: #ffffff;
-    width: 100%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    cursor: pointer;
-  }
-  #gallery-modal .modal-img{
-    width: 100%;
-  }
- #sens1{
-    margin-top: 5%;
-    height: 53%;
- }
-
- #sens2{
-    margin-top: 5%;
-    height: 53%;
- }
-
- #sens3{
-    margin-top: 5%;
-    height: 53%;
- }
-
- #sens4{
-    margin-top: -50%;
+  /* #sens1{
+    width: 200%;
     height: 100%;
- }
+  } */
+ 
+  .col{
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 60%;
+   
+    
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .col{
+      margin-top: 20%;
+      margin-left: -1%;
+      width: 100%;
+      
+  }
+  }
+  
+  @media screen and (min-width: 786px) {
+    .col{
+      margin-top: 5%;
+      margin-left: 20%;
+      width: 60%;
+      }
+  }
 
- #sens5{
-    margin-top: -50%;
-    height: 100%;
- }
-
- #sens6{
-    margin-top: -50%;
-    height: 100%;
- }
- #sens7{
-    margin-top: -50%;
-    height: 110%;
- }
-
- #sens8{
-    margin-top: -50%;
-    height: 110%;
- }
-
- #sens9{
-    margin-top: -50%;
-    height: 110%;
- }
-
- #sens10{
-    margin-top: -50%;
-    height: 250%;
- }
- #sens11{
-    margin-top: -50%;
-    height: 250%;
- }
- #sens12{
-    margin-top: -50%;
-    height: 250%;
- }
+  
 
   /* FOOTER */
 /* FOOTER */
