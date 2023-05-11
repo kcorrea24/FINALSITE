@@ -375,12 +375,15 @@ footer .line {
     
 }
 @media screen and (min-width: 1000px) {
-  .title::after {
-    width:25%;
-    color:black;
-    content: "Northern Cup Cafe";
-
+  @media screen and (min-width: 1000px) {
+    .title::after {
+      width:25%;
+      color:black;
+      content: "Northern Cup Café";
+  
+    }
   }
+  
   
   .logobook {
     width: 20%;

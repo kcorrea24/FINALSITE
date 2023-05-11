@@ -122,6 +122,9 @@ body {
   
 }
 
+#navbarNav a{
+  font-weight: 100;
+}
 .navbar-brand  {
   
     width: 60px;
@@ -462,7 +465,7 @@ footer .line {
   .title::after {
     width:25%;
     color:black;
-    content: "Northern Cup Cafe";
+    content: "Northern Cup Café";
 
   }
 }
