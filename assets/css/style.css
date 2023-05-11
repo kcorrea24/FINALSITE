@@ -11,6 +11,7 @@
   
   
 }
+
 /* loading Screen */
 .img-spinner  {
   position: absolute;
@@ -93,6 +94,7 @@
     --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
     --transition: all 0.5s ease;
 }
+
 
 #name {
   font-size: 80px;
@@ -321,7 +323,7 @@ img {
     position: absolute;
     right: 0;
     bottom: 0;
-    top: 1%;
+    top: -1.5%;
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
@@ -696,7 +698,9 @@ footer .line {
     color: white;
 }
 
-
+#navbarNav{
+  margin-left: 1%;
+}
 
 @media only screen and (min-width: 600px) {
   .title::after {
@@ -706,6 +710,10 @@ footer .line {
     font-size: 4vh;
   font-weight: 700;
   letter-spacing: 1px;
+}
+#navbarNav a:hover{
+  background-color: #7f2b0a;
+  color: white;
 }
 }
 
@@ -719,6 +727,11 @@ footer .line {
   letter-spacing: 1px;
 
 }
+#navbarNav a:hover{
+  background-color: #7f2b0a;
+  color: white;
+}
+
 }
 
 @media screen and (min-width: 786px) {
@@ -730,12 +743,17 @@ footer .line {
       font-weight: 700;
       letter-spacing: 1px;
     }
+    #navbarNav a:hover{
+      background-color: #7f2b0a;
+      color: white;
+    }
+    
 }
 @media screen and (min-width: 1000px) {
   .title::after {
     width:25%;
-    color:black;
-    content: "Northern Cup Café";
+    color:rgb(0, 0, 0);
+    content: "NORTHERN CUP CAFÉ";
     font-family: 'Timeless', sans-serif;
 
   }
