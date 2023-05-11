@@ -4,10 +4,11 @@
 .title {
   display: inline;
   position: absolute;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 25px;
   font-weight: lighter;
   color:lightgray
+  
   
 }
 /* loading Screen */
