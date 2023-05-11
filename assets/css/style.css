@@ -64,6 +64,22 @@
     }
   }
 
+#read{
+  color: white;
+ background-color: #7f2b0a
+
+}
+
+#read:hover{
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+#read, i{
+  margin-left: 10px;
+}
+#read, i:hover{
+  margin-left: 15px;
+}
 /* VARIABLES */
 :root {
     --c-dark: #212529;
@@ -717,7 +733,7 @@ footer .line {
   .title::after {
     width:25%;
     color:black;
-    content: "Northern Cup Cafe";
+    content: "Northern Cup Café";
 
   }
 }
