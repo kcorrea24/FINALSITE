@@ -231,7 +231,7 @@
   }
   
   
-  * NAVBAR */
+  /* * NAVBAR */ 
 .navbar {
     box-shadow: var(--box-shadow);
 }
@@ -334,6 +334,46 @@ footer .line {
 #navbarNav{
   margin-left: 1%;
 }
+@media only screen and (min-width: 300px) {
+  .title::after {
+    color:black;
+    content: "NC";
+    font-family: 'Timeless', sans-serif;
+    font-size: 4vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#navbarNav a:hover{
+  background-color: #7f2b0a;
+  color: white;
+}
+.logobook {
+  margin-left: 80px;
+  width:50%
+}
+
+
+}
+
+@media only screen and (min-width: 400px) {
+  .title::after {
+    color:black;
+    content: "NC";
+    font-family: 'Timeless', sans-serif;
+    font-size: 4vh;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#navbarNav a:hover{
+  background-color: #7f2b0a;
+  color: white;
+}
+.logobook {
+  margin-left: 100px;
+  width:50%
+}
+
+}
 
 @media only screen and (min-width: 600px) {
   .title::after {
@@ -375,10 +415,15 @@ footer .line {
       font-size: 3.5vh;
       font-weight: 700;
       letter-spacing: 1px;
+     
     }
     #navbarNav a:hover{
       background-color: #7f2b0a;
       color: white;
+    }
+    .logobook {
+      margin-left: 170px;
+      width:50%
     }
     
 }
@@ -389,5 +434,9 @@ footer .line {
     content: "NORTHERN CUP CAFÉ";
     font-family: 'Timeless', sans-serif;
 
+  }
+  .logobook {
+    margin-left: 480px;
+    width:25%
   }
 }
