@@ -718,7 +718,7 @@ footer .line {
   margin-left: 1%;
 }
 
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 300px) and (max-width: 365px) {
   .title::after {
     color:black;
     content: "NC";
