@@ -351,7 +351,10 @@ footer .line {
   margin-left: 80px;
   width:50%
 }
-
+body{
+  overflow-x: hidden;
+   }
+ 
 
 }
 
@@ -372,7 +375,10 @@ footer .line {
   margin-left: 100px;
   width:50%
 }
-
+body{
+  overflow-x: hidden;
+   }
+ 
 }
 
 @media only screen and (min-width: 600px) {
@@ -388,6 +394,10 @@ footer .line {
   background-color: #7f2b0a;
   color: white;
 }
+body{
+  overflow-x: hidden;
+   }
+ 
 }
 
 @media only screen and (max-width: 600px) {
@@ -404,7 +414,10 @@ footer .line {
   background-color: #7f2b0a;
   color: white;
 }
-
+body{
+  overflow-x: hidden;
+   }
+ 
 }
 
 @media screen and (min-width: 786px) {
@@ -425,7 +438,10 @@ footer .line {
       margin-left: 170px;
       width:50%
     }
-    
+    body{
+      overflow-x: hidden;
+       }
+     
 }
 @media screen and (min-width: 1000px) {
   .title::after {
@@ -439,4 +455,8 @@ footer .line {
     margin-left: 480px;
     width:25%
   }
+  body{
+    overflow-x: hidden;
+     }
+   
 }

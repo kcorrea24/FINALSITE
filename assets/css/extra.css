@@ -276,7 +276,10 @@ footer .line {
   background-color: #7f2b0a;
   color: white;
 }
-
+body{
+  overflow-x: hidden;
+   }
+ 
 }
 
 @media screen and (min-width: 786px) {
@@ -292,7 +295,10 @@ footer .line {
       background-color: #7f2b0a;
       color: white;
     }
-    
+    body{
+      overflow-x: hidden;
+       }
+     
 }
 @media screen and (min-width: 1000px) {
   .title::after {
@@ -302,4 +308,8 @@ footer .line {
     font-family: 'Timeless', sans-serif;
 
   }
+  body{
+    overflow-x: hidden;
+     }
+   
 }

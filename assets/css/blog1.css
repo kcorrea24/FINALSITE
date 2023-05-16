@@ -406,6 +406,10 @@ footer .line {
   .right-2 {
     left: 0%;
   }
+  body{
+    overflow-x: hidden;
+     }
+   
 }
 .card-body {
   background-color: #7f2b0a;
@@ -425,6 +429,7 @@ footer .line {
   margin-left: 1%;
 }
 
+
 @media only screen and (min-width: 600px) {
   .title::after {
     color:black;
@@ -438,6 +443,10 @@ footer .line {
   background-color: #7f2b0a;
   color: white;
 }
+body{
+  overflow-x: hidden;
+   }
+ 
 }
 
 @media only screen and (max-width: 600px) {
@@ -454,7 +463,10 @@ footer .line {
   background-color: #7f2b0a;
   color: white;
 }
-
+body{
+  overflow-x: hidden;
+   }
+ 
 }
 
 @media screen and (min-width: 786px) {
@@ -470,7 +482,10 @@ footer .line {
       background-color: #7f2b0a;
       color: white;
     }
-    
+    body{
+      overflow-x: hidden;
+       }
+     
 }
 @media screen and (min-width: 1000px) {
   .title::after {
@@ -480,4 +495,8 @@ footer .line {
     font-family: 'Timeless', sans-serif;
 
   }
+  body{
+    overflow-x: hidden;
+     }
+   
 }

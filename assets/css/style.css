@@ -737,6 +737,10 @@ footer .line {
   height: 10%;
   margin-top: 30%;
 }
+body{
+  overflow-x: hidden;
+   }
+ 
 }
 
 @media only screen and (min-width: 400px) {
@@ -758,6 +762,10 @@ footer .line {
   height: 80%;
   margin-top: 20%;
 }
+body{
+  overflow-x: hidden;
+   }
+ 
 }
 @media only screen and (min-width: 600px) {
   .title::after {
@@ -774,12 +782,20 @@ footer .line {
 
 
 }
+body{
+  overflow-x: hidden;
+   }
+ 
 
 #lband{
   width: 50%;
   height: 80%;
   margin-top: 20%;
 }
+body{
+  overflow-x: hidden;
+   }
+ 
 }
 
 
@@ -796,6 +812,10 @@ footer .line {
       background-color: #7f2b0a;
       color: white;
     }
+    body{
+      overflow-x: hidden;
+       }
+     
   
 }
 @media screen and (min-width: 1000px) {
@@ -805,6 +825,9 @@ footer .line {
     content: "NORTHERN CUP CAFÉ";
     font-family: 'Timeless', sans-serif;
 
+  }
+  body{
+ overflow-x: hidden;
   }
 
 }

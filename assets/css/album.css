@@ -273,6 +273,10 @@ footer .line {
   background-color: #7f2b0a;
   color: white;
 }
+body{
+  overflow-x: hidden;
+   }
+ 
 }
 
 @media only screen and (max-width: 600px) {
@@ -289,6 +293,10 @@ footer .line {
   background-color: #7f2b0a;
   color: white;
 }
+body{
+  overflow-x: hidden;
+   }
+ 
 
 }
 
@@ -305,6 +313,10 @@ footer .line {
       background-color: #7f2b0a;
       color: white;
     }
+    body{
+      overflow-x: hidden;
+       }
+     
     
 }
 @media screen and (min-width: 1000px) {
@@ -315,4 +327,8 @@ footer .line {
     font-family: 'Timeless', sans-serif;
 
   }
+  body{
+    overflow-x: hidden;
+     }
+   
 }
